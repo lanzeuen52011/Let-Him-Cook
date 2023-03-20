@@ -3,7 +3,10 @@ html{
 }
 
 body{
-    margin: 0 auto;
+    font-family: 微軟正黑體,Inter, Arial, Arial, Helvetica, sans-serif;
+    color: var(--color-font);
+    font-size: 2.4rem;
+    line-height: 1.5;
 }
 
 :root{
@@ -12,11 +15,39 @@ body{
     --color-categoreis_item_headtext:#f6f2f2;
     --color-categoreis_item_text:#dddddd;
     --color-categoreis_item_tags:#444;
-    --color-font:#333;
+    --color-body:#5c5c5c;
+    --color-headings:#333;
     --color-line:#000;
 }
 
+/*Typographiy*/
 
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5{
+    color: var(--color-headings);
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
+h1{
+    font-size: 7rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+p{
+    margin-top: 0;
+}
 
 
 
