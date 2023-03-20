@@ -1,0 +1,30 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    margin: 0 auto;
+}
+
+:root{
+    --color-categoreis_background_hover:rgba(34, 34, 34,0.1);
+    --color-categoreis_item_like:#ef7e7e;
+    --color-categoreis_item_headtext:#f6f2f2;
+    --color-categoreis_item_text:#dddddd;
+    --color-categoreis_item_tags:#444;
+    --color-font:#333;
+    --color-line:#000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
