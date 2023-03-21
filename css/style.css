@@ -246,11 +246,6 @@ picture{
 
 
 /* catalog */
-
-.catalog__container > h2{
-
-}
-
 .grid{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(100px,1fr))
@@ -319,6 +314,7 @@ picture{
 
 .item__heading{
     margin: 0;
+    font-size: 2.2rem;
 }
 
 .item__text{
