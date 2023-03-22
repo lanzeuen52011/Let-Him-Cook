@@ -4,7 +4,7 @@ html{
 
 body{
     font-family: 微軟正黑體,Inter, Arial, Arial, Helvetica, sans-serif;
-    color: var(--color-font);
+    color: var(--color-body);
     font-size: 2.4rem;
     line-height: 1.5;
     margin: 0;
@@ -61,6 +61,8 @@ h4{
     margin-left: 3.5vw;
     font-weight: 500;
 }
+
+h5,h6{display: none;}
 
 
 p{
@@ -147,6 +149,7 @@ a:visited,a{
     .nav__item{
         display: inline-block;
         position: relative;
+        cursor: pointer;
     }
     .nav__item::before{
         top: 0;
@@ -261,6 +264,9 @@ img{
 }
 
 /* image slider */
+.slider{
+    display: none;
+}
 
     .slider-container {
         display: block;
