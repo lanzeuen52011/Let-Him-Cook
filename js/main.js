@@ -35,13 +35,24 @@ prevEl.addEventListener("click", () => {
 updateImg();
 
 function updateImg() {
-  if (window.screen.availWidth > 1024){
+  if (window.screen.availWidth >= 1024){
     if (currentImg > imgsEl.length) {
       currentImg = 1;
     } else if (currentImg < 1) {
       currentImg = imgsEl.length;
     }
-    imageContainerEl.style.transform = `translateX(-${(currentImg - 1) * 800}px)`;
+    imageContainerEl.style.transform = `translateX(-${(currentImg - 1) * 1024}px)`;
+    timeout = setTimeout(() => {
+      currentImg++;
+      updateImg();
+    }, 3000);}
+  else if (window.screen.availWidth >= 760){
+    if (currentImg > imgsEl.length) {
+      currentImg = 1;
+    } else if (currentImg < 1) {
+      currentImg = imgsEl.length;
+    }
+    imageContainerEl.style.transform = `translateX(-${(currentImg - 1) * 768}px)`;
     timeout = setTimeout(() => {
       currentImg++;
       updateImg();
@@ -58,7 +69,6 @@ function updateImg() {
       updateImg();
     }, 3000);
   }
-  
 }
 
 
