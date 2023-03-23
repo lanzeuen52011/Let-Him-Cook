@@ -56,17 +56,37 @@
         </div>
       </nav>
     </header>
-    <section class="slider-container container">
+    <section class="slider-container container swiper">
       <h2 class="slider">slider</h2>
-      <div class="image-container">
-        <img class="image_slider" src="/image/webp/food1.webp" alt="image" />
-        <img class="image_slider" src="/image/webp/food2.webp" alt="image" />
-        <img class="image_slider" src="/image/webp/food3.webp" alt="image" />
-        <img class="image_slider" src="/image/webp/food4.webp" alt="image" />
-        <img class="image_slider" src="/image/webp/food5.webp" alt="image" />
+      <div class="image-container swiper-wrapper">
+        <img
+          class="image_slider swiper-slide"
+          src="/image/webp/food1.webp"
+          alt="image"
+        />
+        <img
+          class="image_slider swiper-slide"
+          src="/image/webp/food2.webp"
+          alt="image"
+        />
+        <img
+          class="image_slider swiper-slide"
+          src="/image/webp/food3.webp"
+          alt="image"
+        />
+        <img
+          class="image_slider swiper-slide"
+          src="/image/webp/food4.webp"
+          alt="image"
+        />
+        <img
+          class="image_slider swiper-slide"
+          src="/image/webp/food5.webp"
+          alt="image"
+        />
       </div>
-      <i class="fas fa-angle-double-left btn prev"></i>
-      <i class="fas fa-angle-double-right btn next"></i>
+      <i class="fas fa-angle-double-left btn prev swiper-button-prev"></i>
+      <i class="fas fa-angle-double-right btn next swiper-button-next"></i>
     </section>
     <section class="catalog__all container">
       <h2>食譜</h2>
@@ -694,7 +714,7 @@
         </div>
       </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="/js/main.js"></script>
   </body>
 </html>
