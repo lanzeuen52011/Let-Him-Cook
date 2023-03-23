@@ -450,6 +450,15 @@ picture{
     margin-top: 0;
 }
 
+@media screen and (max-width:350px) {
+    div article .grid .catalog__item> .catalog__item_a > article{
+        left: 10%;
+    }
+}
+
+
+
+
 @media screen and (max-width:400px) {
     .grid {
         grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
