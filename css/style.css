@@ -360,6 +360,10 @@ picture{
     grid-template-columns: repeat(auto-fit,minmax(50px,1fr))
 }
 
+.grid li{
+    list-style: none;
+}
+
 .catalog__all h2{
     margin-top: 0;
 }
