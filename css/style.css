@@ -119,11 +119,15 @@ a:visited,a{
     right: 1%;
     top: 100%;
     z-index: 999;
+    background: rgba(255, 255, 255, 0.2);
 }
 
 @media screen and (max-width:426px) {
     .navbar__logo{
         width: 75vw;
+    }
+    .header__list{
+        background: rgba(255, 255, 255, 0.2);
     }
 }
 
@@ -154,16 +158,18 @@ a:visited,a{
     .nav__item::before{
         top: 0;
         left: 0;
+        height: 1px;
     }
     .nav__item::after{
         bottom: 0;
         right: 0;
+        height: 1.5px;
     }
 
     .nav__item::after,.nav__item::before{
         content: "";
         position: absolute;
-        height: 1px;
+        
         width: 0;
         transition: 1s;
         background: #000;
